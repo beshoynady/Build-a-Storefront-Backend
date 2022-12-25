@@ -1,0 +1,21 @@
+{
+  "defaultEnv": { "ENV": "nodeEnv" },
+
+  "dev": {
+    "driver": "pg",
+    "host": { "ENV": "pgHost" },
+    "post": { "ENV": "pgPort" },
+    "database": { "ENV": "pgDb" },
+    "user": { "ENV": "pgUser" },
+    "password": { "ENV": "pgPassword" }
+  },
+
+  "test": {
+    "driver": "pg",
+    "host": { "ENV": "pgHost" },
+    "port": { "ENV": "pgPort" },
+    "database": { "ENV": "pgDb_test" },
+    "user": { "ENV": "pgUser" },
+    "password": { "ENV": "pgPassword" }
+  }
+}
